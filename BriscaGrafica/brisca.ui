@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>brisca</class>
+ <widget class="QMainWindow" name="brisca">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>340</width>
+    <height>430</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>340</width>
+    <height>430</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>340</width>
+    <height>430</height>
+   </size>
+  </property>
+  <property name="mouseTracking">
+   <bool>false</bool>
+  </property>
+  <property name="windowTitle">
+   <string>Brisca</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="res/imagenes.qrc">
+    <normaloff>:/brisca.ico</normaloff>:/brisca.ico</iconset>
+  </property>
+  <property name="accessibleName">
+   <string>Juego de la Brisca</string>
+  </property>
+  <property name="accessibleDescription">
+   <string>Juego de la Brisca</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color: ;
+	background-image: ;
+}</string>
+   </property>
+   <widget class="QPushButton" name="hCarta1J1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>100</width>
+      <height>130</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>90</width>
+      <height>120</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>100</width>
+      <height>130</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background-image: url(:/atras.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+QPushButton:hover{
+	background-image: url(:/joker_sm.png);
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap" stdset="0">
+     <pixmap>resource/atras.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="hCarta2J1">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>10</y>
+      <width>100</width>
+      <height>130</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>90</width>
+      <height>120</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>100</width>
+      <height>130</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background-image: url(:/atras.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+QPushButton:hover{
+	background-image: url(:/joker_sm.png);
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap" stdset="0">
+     <pixmap>resource/atras.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="hCarta3J1">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>10</y>
+      <width>100</width>
+      <height>130</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>90</width>
+      <height>120</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>100</width>
+      <height>130</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background-image: url(:/atras.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+QPushButton:hover{
+	background-image: url(:/joker_sm.png);
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="hCarta3J2">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>290</y>
+      <width>100</width>
+      <height>130</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>90</width>
+      <height>120</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>100</width>
+      <height>130</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background-image: url(:/atras.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+QPushButton:hover{
+	background-image: url(:/joker_sm.png);
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap" stdset="0">
+     <pixmap>resource/atras.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="hCarta1J2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>290</y>
+      <width>100</width>
+      <height>130</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>90</width>
+      <height>120</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>100</width>
+      <height>130</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background-image: url(:/atras.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+QPushButton:hover{
+	background-image: url(:/joker_sm.png);
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap" stdset="0">
+     <pixmap>resource/atras.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="hCarta2J2">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>290</y>
+      <width>100</width>
+      <height>130</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>90</width>
+      <height>120</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>100</width>
+      <height>130</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background-image: url(:/atras.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+QPushButton:hover{
+	background-image: url(:/joker_sm.png);
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap" stdset="0">
+     <pixmap>resource/atras.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="hueco_mazo">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>160</y>
+      <width>140</width>
+      <height>110</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>130</width>
+      <height>100</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>1300</width>
+      <height>1000</height>
+     </size>
+    </property>
+    <property name="whatsThis">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background-image: url(:/atras_mazo.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap" stdset="0">
+     <pixmap>:/resource/atras_mazo_sm.png</pixmap>
+    </property>
+    <property name="scaledContents" stdset="0">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="hCartaPinta">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>150</y>
+      <width>100</width>
+      <height>130</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>90</width>
+      <height>120</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>100</width>
+      <height>130</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background-image: url(:/atras.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+QPushButton:hover{
+	background-image: url(:/joker_sm.png);
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="hCartaEchada1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>150</y>
+      <width>100</width>
+      <height>130</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>90</width>
+      <height>120</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>100</width>
+      <height>130</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background-image: url(:/atras.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap" stdset="0">
+     <pixmap>resource/atras.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="hCartaEchada2">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>150</y>
+      <width>100</width>
+      <height>130</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>90</width>
+      <height>120</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>100</width>
+      <height>130</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background-image: url(:/atras.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap" stdset="0">
+     <pixmap>resource/atras.png</pixmap>
+    </property>
+   </widget>
+   <zorder>hCarta1J1</zorder>
+   <zorder>hCarta2J1</zorder>
+   <zorder>hCarta3J1</zorder>
+   <zorder>hCarta1J2</zorder>
+   <zorder>hCarta2J2</zorder>
+   <zorder>hCarta3J2</zorder>
+   <zorder>hCartaEchada1</zorder>
+   <zorder>hCartaEchada2</zorder>
+   <zorder>hCartaPinta</zorder>
+   <zorder>hueco_mazo</zorder>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="res/imagenes.qrc"/>
+ </resources>
+ <connections/>
+</ui>
