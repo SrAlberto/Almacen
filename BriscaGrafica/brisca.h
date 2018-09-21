@@ -33,66 +33,70 @@ private slots:
   //
   //
     void on_hCarta1J1_clicked();
+    void on_hCarta2J1_clicked();
+    void on_hCarta3J1_clicked();
+    void on_hCarta1J2_clicked();
+    void on_hCarta2J2_clicked();
+    void on_hCarta3J2_clicked();
 
 private:
     Ui::brisca *ui;
   //Variables para concatenar en los StyleSheets
     QString qb= "QPushButton{", qbh= "QPushButton:hover{", atr= "background-image: url(:/'atras'.png);",
     atrsm= "background-image: url(:/'atras_sm'.png);", jk= "background-image: url(:/'joker'.png);",
-    jksm= "background-image: url(:/'joker_sm'.png);", brepo= " background-repeat:no-repeat;background-position:center;";
+    jksm= "background-image: url(:/'joker_sm'.png);", brepo= " background-repeat:no-repeat;background-position:center;",
+    bi= "background-image:url(:/'";
   //Vector que contiene las cartas de la baraja ordenadas
     QVector<Carta> baraja;
   //Vector que contiene las cartas de la baraja ya desordenadas
     QVector<Carta> monton;
   //Vector de dos dimensiones que simula a cada jugador
-    QVector<QPushButton*> player1;
-    QVector<QPushButton*> player2;
     QVector<QVector<QPushButton*>> players;//= {player1, player2};
   //Método que nos crea la baraja
     void crearBaraja(){
-        Carta oros1= Carta(0, 1, "background-image:url(:/'oro'/'1_sm'.jpg);"+brepo+"}");
-        Carta oros2= Carta(0, 1, "background-image:url(:/'oro'/'2_sm'.jpg);"+brepo+"}");
-        Carta oros3= Carta(0, 1, "background-image:url(:/'oro'/'3_sm'.jpg);"+brepo+"}");
-        Carta oros4= Carta(0, 1, "background-image:url(:/'oro'/'4_sm'.jpg);"+brepo+"}");
-        Carta oros5= Carta(0, 1, "background-image:url(:/'oro'/'5_sm'.jpg);"+brepo+"}");
-        Carta oros6= Carta(0, 1, "background-image:url(:/'oro'/'6_sm'.jpg);"+brepo+"}");
-        Carta oros7= Carta(0, 1, "background-image:url(:/'oro'/'7_sm'.jpg);"+brepo+"}");
-        Carta oros10= Carta(0, 1, "background-image:url(:/'oro'/'10_sm'.jpg);"+brepo+"}");
-        Carta oros11= Carta(0, 1, "background-image:url(:/'oro'/'11_sm'.jpg);"+brepo+"}");
-        Carta oros12= Carta(0, 1, "background-image:url(:/'oro'/'12_sm'.jpg);"+brepo+"}");
+        Carta oros1= Carta(0, 1, "background-image:url(:/'oro'/'1'_sm.jpg);"+brepo+"}");
+        Carta oros2= Carta(0, 1, "background-image:url(:/'oro'/'2'_sm.jpg);"+brepo+"}");
+        Carta oros3= Carta(0, 1, "background-image:url(:/'oro'/'3'_sm.jpg);"+brepo+"}");
+        Carta oros4= Carta(0, 1, "background-image:url(:/'oro'/'4'_sm.jpg);"+brepo+"}");
+        Carta oros5= Carta(0, 1, "background-image:url(:/'oro'/'5'_sm.jpg);"+brepo+"}");
+        Carta oros6= Carta(0, 1, "background-image:url(:/'oro'/'6'_sm.jpg);"+brepo+"}");
+        Carta oros7= Carta(0, 1, "background-image:url(:/'oro'/'7'_sm.jpg);"+brepo+"}");
+        Carta oros10= Carta(0, 1, "background-image:url(:/'oro'/'10'_sm.jpg);"+brepo+"}");
+        Carta oros11= Carta(0, 1, "background-image:url(:/'oro'/'11'_sm.jpg);"+brepo+"}");
+        Carta oros12= Carta(0, 1, "background-image:url(:/'oro'/'12'_sm.jpg);"+brepo+"}");
 
-        Carta espadas1= Carta(1, 1, "background-image:url(:/'espada'/'1_sm'.jpg);"+brepo+"}");
-        Carta espadas2= Carta(1, 1, "background-image:url(:/'espada'/'2_sm'.jpg);"+brepo+"}");
-        Carta espadas3= Carta(1, 1, "background-image:url(:/'espada'/'3_sm'.jpg);"+brepo+"}");
-        Carta espadas4= Carta(1, 1, "background-image:url(:/'espada'/'4_sm'.jpg);"+brepo+"}");
-        Carta espadas5= Carta(1, 1, "background-image:url(:/'espada'/'5_sm'.jpg);"+brepo+"}");
-        Carta espadas6= Carta(1, 1, "background-image:url(:/'espada'/'6_sm'.jpg);"+brepo+"}");
-        Carta espadas7= Carta(1, 1, "background-image:url(:/'espada'/'7_sm'.jpg);"+brepo+"}");
-        Carta espadas10= Carta(1, 1, "background-image:url(:/'espada'/'10_sm'.jpg);"+brepo+"}");
-        Carta espadas11= Carta(1, 1, "background-image:url(:/'espada'/'11_sm'.jpg);"+brepo+"}");
-        Carta espadas12= Carta(1, 1, "background-image:url(:/'espada'/'12_sm'.jpg);"+brepo+"}");
+        Carta espadas1= Carta(1, 1, "background-image:url(:/'espada'/'1'_sm.jpg);"+brepo+"}");
+        Carta espadas2= Carta(1, 1, "background-image:url(:/'espada'/'2'_sm.jpg);"+brepo+"}");
+        Carta espadas3= Carta(1, 1, "background-image:url(:/'espada'/'3'_sm.jpg);"+brepo+"}");
+        Carta espadas4= Carta(1, 1, "background-image:url(:/'espada'/'4'_sm.jpg);"+brepo+"}");
+        Carta espadas5= Carta(1, 1, "background-image:url(:/'espada'/'5'_sm.jpg);"+brepo+"}");
+        Carta espadas6= Carta(1, 1, "background-image:url(:/'espada'/'6'_sm.jpg);"+brepo+"}");
+        Carta espadas7= Carta(1, 1, "background-image:url(:/'espada'/'7'_sm.jpg);"+brepo+"}");
+        Carta espadas10= Carta(1, 1, "background-image:url(:/'espada'/'10'_sm.jpg);"+brepo+"}");
+        Carta espadas11= Carta(1, 1, "background-image:url(:/'espada'/'11'_sm.jpg);"+brepo+"}");
+        Carta espadas12= Carta(1, 1, "background-image:url(:/'espada'/'12'_sm.jpg);"+brepo+"}");
 
-        Carta copas1= Carta(2, 1, "background-image:url(:/'copa'/'1_sm'.jpg);"+brepo+"}");
-        Carta copas2= Carta(2, 1, "background-image:url(:/'copa'/'2_sm'.jpg);"+brepo+"}");
-        Carta copas3= Carta(2, 1, "background-image:url(:/'copa'/'3_sm'.jpg);"+brepo+"}");
-        Carta copas4= Carta(2, 1, "background-image:url(:/'copa'/'4_sm'.jpg);"+brepo+"}");
-        Carta copas5= Carta(2, 1, "background-image:url(:/'copa'/'5_sm'.jpg);"+brepo+"}");
-        Carta copas6= Carta(2, 1, "background-image:url(:/'copa'/'6_sm'.jpg);"+brepo+"}");
-        Carta copas7= Carta(2, 1, "background-image:url(:/'copa'/'7_sm'.jpg);"+brepo+"}");
-        Carta copas10= Carta(2, 1, "background-image:url(:/'copa'/'10_sm'.jpg);"+brepo+"}");
-        Carta copas11= Carta(2, 1, "background-image:url(:/'copa'/'11_sm'.jpg);"+brepo+"}");
-        Carta copas12= Carta(2, 1, "background-image:url(:/'copa'/'12_sm'.jpg);"+brepo+"}");
+        Carta copas1= Carta(2, 1, "background-image:url(:/'copa'/'1'_sm.jpg);"+brepo+"}");
+        Carta copas2= Carta(2, 1, "background-image:url(:/'copa'/'2'_sm.jpg);"+brepo+"}");
+        Carta copas3= Carta(2, 1, "background-image:url(:/'copa'/'3'_sm.jpg);"+brepo+"}");
+        Carta copas4= Carta(2, 1, "background-image:url(:/'copa'/'4'_sm.jpg);"+brepo+"}");
+        Carta copas5= Carta(2, 1, "background-image:url(:/'copa'/'5'_sm.jpg);"+brepo+"}");
+        Carta copas6= Carta(2, 1, "background-image:url(:/'copa'/'6'_sm.jpg);"+brepo+"}");
+        Carta copas7= Carta(2, 1, "background-image:url(:/'copa'/'7'_sm.jpg);"+brepo+"}");
+        Carta copas10= Carta(2, 1, "background-image:url(:/'copa'/'10'_sm.jpg);"+brepo+"}");
+        Carta copas11= Carta(2, 1, "background-image:url(:/'copa'/'11'_sm.jpg);"+brepo+"}");
+        Carta copas12= Carta(2, 1, "background-image:url(:/'copa'/'12'_sm.jpg);"+brepo+"}");
 
-        Carta bastos1= Carta(3, 1, "background-image:url(:/'basto'/'1_sm'.jpg);"+brepo+"}");
-        Carta bastos2= Carta(3, 1, "background-image:url(:/'basto'/'2_sm'.jpg);"+brepo+"}");
-        Carta bastos3= Carta(3, 1, "background-image:url(:/'basto'/'3_sm'.jpg);"+brepo+"}");
-        Carta bastos4= Carta(3, 1, "background-image:url(:/'basto'/'4_sm'.jpg);"+brepo+"}");
-        Carta bastos5= Carta(3, 1, "background-image:url(:/'basto'/'5_sm'.jpg);"+brepo+"}");
-        Carta bastos6= Carta(3, 1, "background-image:url(:/'basto'/'6_sm'.jpg);"+brepo+"}");
-        Carta bastos7= Carta(3, 1, "background-image:url(:/'basto'/'7_sm'.jpg);"+brepo+"}");
-        Carta bastos10= Carta(3, 1, "background-image:url(:/'basto'/'10_sm'.jpg);"+brepo+"}");
-        Carta bastos11= Carta(3, 1, "background-image:url(:/'basto'/'11_sm'.jpg);"+brepo+"}");
-        Carta bastos12= Carta(3, 1, "background-image:url(:/'basto'/'12_sm'.jpg);"+brepo+"}");
+        Carta bastos1= Carta(3, 1, "background-image:url(:/'basto'/'1'_sm.jpg);"+brepo+"}");
+        Carta bastos2= Carta(3, 1, "background-image:url(:/'basto'/'2'_sm.jpg);"+brepo+"}");
+        Carta bastos3= Carta(3, 1, "background-image:url(:/'basto'/'3'_sm.jpg);"+brepo+"}");
+        Carta bastos4= Carta(3, 1, "background-image:url(:/'basto'/'4'_sm.jpg);"+brepo+"}");
+        Carta bastos5= Carta(3, 1, "background-image:url(:/'basto'/'5'_sm.jpg);"+brepo+"}");
+        Carta bastos6= Carta(3, 1, "background-image:url(:/'basto'/'6'_sm.jpg);"+brepo+"}");
+        Carta bastos7= Carta(3, 1, "background-image:url(:/'basto'/'7'_sm.jpg);"+brepo+"}");
+        Carta bastos10= Carta(3, 1, "background-image:url(:/'basto'/'10'_sm.jpg);"+brepo+"}");
+        Carta bastos11= Carta(3, 1, "background-image:url(:/'basto'/'11'_sm.jpg);"+brepo+"}");
+        Carta bastos12= Carta(3, 1, "background-image:url(:/'basto'/'12'_sm.jpg);"+brepo+"}");
 
         baraja.append(oros1);
         baraja.append(oros2);
@@ -150,11 +154,14 @@ private:
     QMessageBox msg;
   //Nos permite obtener la posición de la Carta, para luego moverla
     QRect geo;
+  //Almacén del StyleSheet
+//    QString ss;
   //Personalizar la Carta pulsada
-    void botonPress(QPushButton* bt);
+    void botonPress(QPushButton* bt, int n);
   //Personalizar la Carta pulsada por segunda vez
     void botonRelease(QPushButton* bt);
-
+  //Devuelve un vector con la información de la carta
+    QVector<QString> getCarta(QPushButton* bt);
 };
 
 #endif // BRISCA_H

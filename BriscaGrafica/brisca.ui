@@ -308,7 +308,7 @@ QPushButton:hover{
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton{
-	background-image: url(:/atras_mazo.png);
+	background-image: url(:/'atras_mazo'.png);
 	background-position: center;
 	background-repeat: no-repeat;
 }</string>
